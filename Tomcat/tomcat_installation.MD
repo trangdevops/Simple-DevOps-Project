@@ -16,6 +16,12 @@
    ```
    > Note: you may get below error while starting tomcat incase if you dont install Java   
    `Neither the JAVA_HOME nor the JRE_HOME environment variable is defined At least one of these environment variable is needed to run this program`
+   ```sh
+   cd ~
+   vi .bash_profile
+   add: JAVA_HOME=/usr/lib/jvm/java-11_*
+        PATH=$PATH:$HOME/.local/bin:$HOME/bin:$JAVA_HOME
+   ``sh
 1. create link files for tomcat startup.sh and shutdown.sh 
    ```sh
    ln -s /opt/apache-tomcat-<version>/bin/startup.sh /usr/local/bin/tomcatup
